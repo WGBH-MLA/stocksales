@@ -1,0 +1,77 @@
+:root {
+
+/* Colors: */
+--blue-5-core-2b72f6: #2B72F6;
+--purple-7-590e6e: #590E6E;
+--purple-6-core-772b8d: #772B8D;
+--purple-5-9b4ab8: #9B4AB8;
+--purple-3-cc8fdf: #CC8FDF;
+--gray-5-38393b: #38393B;
+--gray-2-c3c6c9: #C3C6C9;
+--gray-1-50-f0f2f2: #F0F2F2;
+--unnamed-color-6d3388: #6D3388;
+
+/* Font/text values */
+--unnamed-font-family-red-hat-text: Red Hat Text;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-medium: medium;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-weight-normal: normal;
+--unnamed-font-size-18: 18px;
+--unnamed-font-size-24: 24px;
+--unnamed-font-size-32: 32px;
+--unnamed-font-size-68: 68px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-24: 24px;
+--unnamed-line-spacing-36: 36px;
+--unnamed-line-spacing-40: 40px;
+--unnamed-line-spacing-43: 43px;
+--unnamed-line-spacing-80: 80px;
+}
+
+/* Character Styles */
+.h1 {
+font-family: var(--unnamed-font-family-red-hat-text);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-68);
+line-height: var(--unnamed-line-spacing-80);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-6d3388);
+}
+.h2 {
+font-family: var(--unnamed-font-family-red-hat-text);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-medium);
+font-size: var(--unnamed-font-size-32);
+line-height: var(--unnamed-line-spacing-40);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-6d3388);
+}
+.h3-link {
+font-family: var(--unnamed-font-family-red-hat-text);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-32);
+line-height: var(--unnamed-line-spacing-43);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--blue-5-core-2b72f6);
+}
+.p1 {
+font-family: var(--unnamed-font-family-red-hat-text);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-24);
+line-height: var(--unnamed-line-spacing-36);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--gray-5-38393b);
+}
+.p2 {
+font-family: var(--unnamed-font-family-red-hat-text);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-normal);
+font-size: var(--unnamed-font-size-18);
+line-height: var(--unnamed-line-spacing-24);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--gray-5-38393b);
+}

@@ -1,0 +1,27 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1.2rem;
+	line-height: $font__line-height-body;
+}
+
+
+.site-title {
+	color: $color_title;
+	font-weight: 200;
+
+	a {
+		color: $color_title;
+		text-decoration: none;
+			&:visited {
+				color: $color_title;
+								}
+		}
+}
+@import "headings";
+@import "copy";

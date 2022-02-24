@@ -1,0 +1,41 @@
+a {
+	color: $color__link;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+
+
+button[type="contact"] {
+a {
+	color: #fff;
+	text-decoration: none;
+	&:visited {
+		color: #fff;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: #fff;
+	}
+
+}
+
+}
