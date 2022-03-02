@@ -776,6 +776,21 @@ p.front-content {
     margin-top: 0;
   }
 }
+/* ABout Us title page-12 template */
+.page12-title {
+  margin-left: 10%;
+}
+
+#post-12 {
+  margin-top: -17em;
+  margin-left: 0;
+  position: relative;
+  background-color: #fff;
+}
+#post-12 .entry-content {
+  margin: 0 5em 0 5em;
+}
+
 hr {
   background-color: #ccc;
   border: 0;
