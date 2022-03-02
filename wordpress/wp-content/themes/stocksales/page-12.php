@@ -19,7 +19,7 @@ get_header();
 </header><!-- .entry-header -->
 
 <div class="wp-block-cover aligncenter">
-	<img width="1024" height="420" class="wp-block-cover__image-background wp-image-218" alt="" src="http://localhost/wp-content/uploads/2022/02/Background-B-1024x420.png" style="object-position:10% 10%" data-object-fit="cover" data-object-position="10% 10%"/>
+	<img width="1024" height="420" class="wp-block-cover__image-background wp-image-218" alt="" src="/wp-content/uploads/2022/02/Background-B-1024x420.png" style="object-position:10% 10%" data-object-fit="cover" data-object-position="10% 10%"/>
 </div>
 
 	<main id="primary" class="site-main splash">
