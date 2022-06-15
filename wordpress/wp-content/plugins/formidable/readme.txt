@@ -3,9 +3,9 @@ Plugin Name: Formidable Forms - Contact Form, Survey & Quiz Forms Plugin for Wor
 Contributors: formidableforms, sswells, srwells
 Tags: forms, contact form, form builder, survey, free, form maker, form creator, paypal form, paypal, stripe, stripe form, aweber, aweber form, getresponse, getresponse form, calculator, price calculator, quote form, contact button, form manager, Akismet, payment form, survey form, donation form, email subscription, contact form widget, user registration form, wordpress registration, wordpress login form, constant contact, mailpoet, active campaign, salesforce, hubspot, campaign monitor, quiz builder, quiz, feedback form, mailchimp form
 Requires at least: 5.2
-Tested up to: 5.9.2
+Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 5.2.03
+Stable tag: 5.3.2
 
 The most advanced WordPress forms plugin. Go beyond contact forms with our drag & drop form builder for surveys, quizzes, and more.
 
@@ -216,7 +216,7 @@ After reading this feature list, you can probably imagine why Formidable is the 
 
 Give Formidable Forms a try.
 
-Want to unlock the full power? <a href="https://formidableforms.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion">Upgrade to Premium</a> to get all the features for smart forms and full web applications.
+Want to unlock the full power? <a href="https://formidableforms.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion">Upgrade to Pro</a> to get all the features for smart forms and full web applications.
 
 == Credits ==
 This online form builder plugin is created by Steve and Steph Wells and the amazing Strategy11 Team.
@@ -438,24 +438,20 @@ Using our Zapier integration, you can easily connect Formidable with over 1000+ 
 See all <a href="https://zapier.com/apps/formidable/integrations">Formidable Zapier Integrations</a>.
 
 == Changelog ==
-= 5.2.03 =
-* New: Updated how unique field and form keys are generated for shorter unique keys.
-* New: Added a new frm_unique_field_key_separator filter for unique field keys.
-* New: Added a new frm_saved_errors filter for extending custom form validation.
-* Fix: Fixed a conflict with All in One SEO that was causing multiselect dropdowns to appear larger than expected.
+= 5.3.2 =
+* New: RGB and RGBA color values will now be fixed automatically on save if incomplete to avoid broken CSS.
 
-= 5.2.02.01 =
-* Fix: Fixed a conflict with Duplicator Pro that was causing dropdowns to break after updating to Bootstrap 4.
-* Fix: Bottom margins were removed from credit card and address fields with last release and have been added back.
-* Fix: Imported templates with multiple forms were getting imported with the wrong name.
-* Fix: Clicking to install a quiz template was copying the NEW html into the form name input.
+= 5.3.1 =
+* New: Unlocked application templates now appear at the top of the list of templates.
+* New: Improved the responsiveness of the cards on the Application dashboard page.
+* Fix: Prevent a conflict with All in One SEO that was preventing CSS from loading at all when the only on applicable pages setting is selected.
+* Fix: An unexpected add new button was appearing on a few pages and has been removed.
+* Fix: Prevent a fatal error in PHP8 that happens on sites with an unexpected empty string gmt_offset option set.
 
-= 5.2.02 =
-* Updated Bootstrap to version 4.6.1.
-* New: Name fields will be automatically used to define entry names if available.
-* New: Added setting to update privileged access message.
-* Fix: Section icon dropdown toggles were not displaying updated changes.
-* Fix: Prevent a PHP 8.1 deprecation message where null was being passed to substr.
-* Fix: Name fields with no descriptions were still displaying bottom margins.
+= 5.3 =
+* New: Added a new applications page for displaying available Formidable application templates.
+* New: Imported views and pages with [formidable] and [display-frm-data] shortcodes will now replace old form and view ids with the new imported ids.
+* New: Imported forms will now replace the old field ids with new field ids when the id is used in a field_id shortcode option.
+* Fix: Field id values were not always properly updating when duplicating a form depending on the order of the fields.
 
 <a href="https://raw.githubusercontent.com/Strategy11/formidable-forms/master/changelog.txt">See changelog for all versions</a>
