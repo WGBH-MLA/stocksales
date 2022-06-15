@@ -16,6 +16,7 @@ get_header();
 ?>
 <header class="entry-header page12-title">
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	<p>GBH Stock Sales is the licensing division of the GBH Archives</p>
 </header><!-- .entry-header -->
 
 <div class="wp-block-cover aligncenter">

@@ -11,7 +11,7 @@ class FrmAppHelper {
 	/**
 	 * @since 2.0
 	 */
-	public static $plug_version = '5.2.01';
+	public static $plug_version = '5.2.03';
 
 	/**
 	 * @since 1.07.02
@@ -1805,19 +1805,36 @@ class FrmAppHelper {
 
 		$key = self::prevent_numeric_and_reserved_keys( $key );
 
-		$key_check = FrmDb::get_var(
+		$similar_keys = FrmDb::get_col(
 			$table_name,
 			array(
-				$column => $key,
-				'ID !'  => $id,
+				$column . ' like%' => $key,
+				'ID !'             => $id,
 			),
 			$column
 		);
 
-		if ( $key_check || is_numeric( $key_check ) ) {
+		// Create a unique field id if it has already been used.
+		if ( in_array( $key, $similar_keys, true ) ) {
 			$key = self::maybe_truncate_key_before_appending( $column, $key );
-			// Create a unique field id if it has already been used.
-			$key = $key . substr( md5( microtime() . rand() ), 0, 10 );
+
+			/**
+			 * Allow for a custom separator between the attempted key and the generated suffix.
+			 *
+			 * @since 5.2.03
+			 *
+			 * @param string $separator. Default empty.
+			 * @param string $key the key without the added suffix.
+			 */
+			$separator = apply_filters( 'frm_unique_' . $column . '_separator', '', $key );
+
+			$suffix = 2;
+			do {
+				$key_check = $key . $separator . $suffix;
+				++$suffix;
+			} while ( in_array( $key_check, $similar_keys, true ) );
+
+			$key = $key_check;
 		}
 
 		return $key;
@@ -1836,6 +1853,9 @@ class FrmAppHelper {
 			$max_key_length_before_truncating = 60;
 			if ( strlen( $key ) > $max_key_length_before_truncating ) {
 				$key = substr( $key, 0, $max_key_length_before_truncating );
+				if ( is_numeric( $key ) ) {
+					$key .= 'a';
+				}
 			}
 		}
 		return $key;
@@ -3318,6 +3338,10 @@ class FrmAppHelper {
 	 */
 	public static function set_current_screen_and_hook_suffix() {
 		global $hook_suffix;
+		if ( is_null( $hook_suffix ) ) {
+			// $hook_suffix gets used in substr so make sure it's not null. PHP 8.1 deprecates null in substr.
+			$hook_suffix = ''; // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited
+		}
 		set_current_screen();
 	}
 
@@ -3347,6 +3371,20 @@ class FrmAppHelper {
 			</div>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Shows pill text.
+	 *
+	 * @since 5.2.02
+	 *
+	 * @param string $text Text in the pill. Default is NEW.
+	 */
+	public static function show_pill_text( $text = null ) {
+		if ( null === $text ) {
+			$text = __( 'NEW', 'formidable' );
+		}
+		echo '<span class="frm-new-pill">' . esc_html( $text ) . '</span>';
 	}
 
 	/**
