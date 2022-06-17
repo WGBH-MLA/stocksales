@@ -133,7 +133,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 
-/* Tim added these
+/* Tim added these to display locally. The URL is set for the k8s environment in the wordpress UI
 define( 'WP_HOME', 'http://localhost' );
 define( 'WP_SITEURL', 'http://localhost' );
-*/
+
+ */

@@ -561,6 +561,10 @@ body #primary {
   color: #FFFFFF;
 }
 
+.purple-circle {
+  margin-top: -10em;
+}
+
 .circle-me {
   border: 2px solid #C293DA;
   border-radius: 90px;
@@ -617,8 +621,8 @@ body #primary {
 }
 
 .front-content {
-  width: 33vw;
-  min-width: 240px;
+  width: 15em;
+  height: 15em;
 }
 
 p.front-content {
@@ -666,62 +670,62 @@ p.front-content {
 */
 @media screen and (max-width: 2400px) {
   .grey-front-p {
-    margin-top: 16em;
+    margin-top: 12em;
   }
 }
 @media screen and (max-width: 1800px) {
   .grey-front-p {
-    margin-top: 15em;
+    margin-top: 10.6em;
   }
 }
 @media screen and (max-width: 1750px) {
   .grey-front-p {
-    margin-top: 14.5em;
+    margin-top: 9.5em;
   }
 }
 @media screen and (max-width: 1740px) {
   .grey-front-p {
-    margin-top: 14em;
+    margin-top: 9.2em;
   }
 }
 @media screen and (max-width: 1700px) {
   .grey-front-p {
-    margin-top: 12em;
+    margin-top: 8.5em;
   }
 }
 @media screen and (max-width: 1630px) {
   .grey-front-p {
-    margin-top: 11em;
+    margin-top: 7em;
   }
 }
 @media screen and (max-width: 1576px) {
   .grey-front-p {
-    margin-top: 10em;
+    margin-top: 6em;
   }
 }
 @media screen and (max-width: 1575px) {
   .grey-front-p {
-    margin-top: 9.8em;
+    margin-top: 5.8em;
   }
 }
 @media screen and (max-width: 1520px) {
   .grey-front-p {
-    margin-top: 9.3em;
+    margin-top: 5.3em;
   }
 }
 @media screen and (max-width: 1500px) {
   .grey-front-p {
-    margin-top: 9em;
+    margin-top: 5em;
   }
 }
 @media screen and (max-width: 1467px) {
   .grey-front-p {
-    margin-top: 8.4em;
+    margin-top: 4.4em;
   }
 }
 @media screen and (max-width: 1240px) {
   .grey-front-p {
-    margin-top: 6em;
+    margin-top: 4.8em;
   }
 }
 @media screen and (max-width: 1075px) {
@@ -731,7 +735,7 @@ p.front-content {
 }
 @media screen and (max-width: 1032px) {
   .grey-front-p {
-    margin-top: 2em;
+    margin-top: 4.4em;
   }
 }
 @media screen and (max-width: 599px) {
@@ -748,12 +752,25 @@ p.front-content {
   .front-grey-background {
     margin-top: 8em;
     height: 60em;
+    margin-bottom: -6em;
   }
 }
 @media screen and (min-width: 600px) {
   .front-grey-background {
     margin-top: 8em;
     height: 25em;
+    margin-bottom: -6em;
+  }
+}
+@media screen and (max-width: 3200px) {
+  .front-content {
+    height: 15em;
+    width: 15em;
+  }
+}
+@media screen and (max-width: 980px) {
+  .front-content {
+    height: 8em;
   }
 }
 .front-content-logo {
@@ -1043,6 +1060,8 @@ textarea {
 body.home nav.main-navigation {
   background-color: #772B8D;
   margin-top: 4em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 body.home nav.main-navigation li a {
   color: #FFFFFF;
