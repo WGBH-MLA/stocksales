@@ -17,7 +17,7 @@ get_header();
 <div class="wp-block-cover aligncenter"><img width="1024" height="420" class="wp-block-cover__image-background wp-image-42" alt="" src="/wp-content/uploads/2021/09/Hero-A-1024x420.png" data-object-fit="cover" srcset="/wp-content/uploads/2021/09/Hero-A-1024x420.png 1024w, /wp-content/uploads/2021/09/Hero-A-300x123.png 300w, /wp-content/uploads/2021/09/Hero-A-768x315.png 768w, /wp-content/uploads/2021/09/Hero-A.png 1440w" sizes="(max-width: 1024px) 100vw, 1024px"><div class="wp-block-cover__inner-container">
 <p class="has-text-align-center front-content has-white-background-color has-text-color has-background boxy-mac-float" style="color:#6d3388">Over 60 years of footage, public media, and web content from GBH Boston.
 
-<button type="explore" value="Explore our media">Explore our media</button>
+	<button type="explore" value="Explore our media"><a href="//featured-clips/">Explore our media</a></button>
 </p>
 </div></div>
 
