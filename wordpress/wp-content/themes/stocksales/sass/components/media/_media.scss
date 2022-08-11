@@ -12,27 +12,37 @@
 	// display: inline-block;
 }
 
-.custom-logo {
-
-width: auto;
-height: auto;
-
-}
-
-@media screen and (max-width:745px) {
-
+@media screen and (min-width:875px) {
 	.custom-logo {
 
-	width: 100%;
-	height: auto;
-padding-left: 5%;
-padding-right: 5%;
+	width: auto;
+	height: 58px;
+	margin-top:52px;
+	position:absolute;
+	right: 124px;
 	}
 }
 
+
+
+@media screen and (max-width:875px) {
+
+	.custom-logo {
+
+	width: auto;
+	height: 48px;
+//padding-left: 5%;
+//padding-right: 5%;
+//margin-top: -72px;
+float: none;
+	}
+}
+/*
 @media screen and (min-width:795px) {
 
 	.video-clip {
 		max-width: 40vw;
 	}
 }
+
+*/

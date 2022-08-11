@@ -1,8 +1,12 @@
+
+
+
+
 a {
 	color: $color__link;
 	text-decoration: none;
 	&:visited {
-		color: $color__link-visited;
+	//	color: $color__link;
 		text-decoration: none;
 	}
 
@@ -40,4 +44,31 @@ a {
 
 }
 
+}
+
+#colophon{
+a.terms {
+
+	color:#6A6D70;
+	&:visited {
+		color: #6A6D70;
+		text-decoration: none;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: #6A6D70;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
 }

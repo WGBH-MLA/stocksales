@@ -20,7 +20,7 @@
 		<div class="site-info">
 			<h2>Stock Sales & Licensing</h2>
 			<p>stock_sales@wgbh.org | 617 300 3939</p>
-			<p class="terms"> &copy; <?php echo date('Y'); ?> WGBH Educational Foundation. All rights reserved. | <a classs="terms" href="/index.php?page_id=16">Terms & Conditions</a></p>
+			<p class="terms"> &copy; <?php echo date('Y'); ?> WGBH Educational Foundation. All rights reserved. | <a class="terms" href="/index.php?page_id=16">Terms & Conditions</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

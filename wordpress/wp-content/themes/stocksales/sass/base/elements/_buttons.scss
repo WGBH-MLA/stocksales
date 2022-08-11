@@ -30,7 +30,9 @@ button[type="contact"] {
 	color: #fff;
 	line-height: 1;
 	padding: 1em 2.4em 1em;
-	font-weight: 300;
+	font-weight: 600;
+	width: 238px;
+    height: 60px;
 	&:hover {
 		border-color: #f2f2f2;
 	}
@@ -55,11 +57,13 @@ button[type="explore"] {
 	background: #3E74EE;
 	color: #fff;
 	line-height: 1;
-	padding: 1em 2.4em 1em;
+	padding: 1em 1em;
 	font-weight: 300;
 	display:block;
-	margin-left: 10%;
-	margin-RIGHT: 10%;
+	width: 280px;
+	margin-top: 25px;
+	//margin-left: 10%;
+	//margin-RIGHT: 10%;
 
 	&:hover {
 		border-color: #f2f2f2;
@@ -76,6 +80,16 @@ button[type="explore"] {
 button[type="explore"] {
 	margin-left: auto;
 	margin-right: auto;	}
+}
+
+
+
+
+@media screen and (max-width:375px) {
+button[type="explore"] {
+width: 200px;
+margin-left: -56px;
+		}
 }
 
 /*

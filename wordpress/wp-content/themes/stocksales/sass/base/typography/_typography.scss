@@ -14,7 +14,9 @@ textarea {
 .site-title {
 	color: $color_title;
 	font-weight: 200;
-
+	font-size: 32px;
+	margin: 0;
+	margin-top:10px;
 	a {
 		color: $color_title;
 		text-decoration: none;
@@ -23,5 +25,21 @@ textarea {
 								}
 		}
 }
+
+.nav-menu {
+
+	font-size: 16px;
+}
+
+
+
+.under-circle {
+	font-size: 24px;
+	color: #38393B;
+	opacity: 1;
+}
+
+
+
 @import "headings";
 @import "copy";
